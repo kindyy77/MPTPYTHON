@@ -31,8 +31,11 @@ def delenye():
     try:
         a = int(input("Введите первое число: "))
         b = int(input("Введите второе число: "))
-        c = a / b
-        print(a, ":", b, "=", c)
+        if b != 0:
+            c = a / b
+            print(a, ":", b, "=", c)
+        else:
+            print("Деление на 0 невозможно")
     except ValueError:
         print("Неверный ввод. Введите число.")
 
@@ -128,7 +131,7 @@ while True:
     elif choice == "10":
         tangens()
     elif choice == "11":
-        ()
+        vihod()
         break
     else:
         print("Неверный ввод. Введите число.")
