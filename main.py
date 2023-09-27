@@ -19,55 +19,85 @@ while True:
     choice = str(input("Выберите пункт меню: "))
 
     if choice == "1":
-        a = int(input("Введите первое число : "))
-        b = int(input("Введите второе число : "))
-        c = a + b
-        print(a,"+",b,"=",c)
+        try:
+            a = int(input("Введите первое число : "))
+            b = int(input("Введите второе число : "))
+            c = a + b
+            print(a,"+",b,"=",c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "2":
-        a = int(input("Введите первое число : "))
-        b = int(input("Введите второе число : "))
-        c = a - b
-        print(a, "-", b, "=", c)
+        try:
+            a = int(input("Введите первое число : "))
+            b = int(input("Введите второе число : "))
+            c = a - b
+            print(a, "-", b, "=", c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "3":
-        a = int(input("Введите первое число : "))
-        b = int(input("Введите второе число : "))
-        c = a * b
-        print(a, "*", b, "=", c)
+        try:
+            a = int(input("Введите первое число : "))
+            b = int(input("Введите второе число : "))
+            c = a * b
+            print(a, "*", b, "=", c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "4" :
-        a = int(input("Введите первое число : "))
-        b = int(input("Введите второе число : "))
-        c = a / b
-        print(a, ":", b, "=", c)
+            try:
+                a = int(input("Введите первое число : "))
+                b = int(input("Введите второе число : "))
+                c = a / b
+                print(a, ":", b, "=", c)
+            except ValueError:
+                print("Неверный ввод. Введите число.")
     elif choice == "5" :
-        a = int(input("Введите первое число : "))
-        b = int(input("Введите степень : "))
-        c = a ** b
-        print(a, " в степени ", b, "=", c)
+            try:
+                a = int(input("Введите первое число : "))
+                b = int(input("Введите степень : "))
+                c = a ** b
+                print(a, " в степени ", b, "=", c)
+            except ValueError:
+                print("Неверный ввод. Введите число.")
     elif choice == "6":
-        a = int(input("Введите число : "))
-        c = a ** 0.5
-        print("Квадратный корень из ",a," = ",c)
+        try:
+            a = int(input("Введите число : "))
+            c = a ** 0.5
+            print("Квадратный корень из ",a," = ",c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "7" :
-        a = int(input("Введите число : "))
-        c = math.factorial(a)
-        print("Факториал из ", a, " = ", c)
+        try:
+            a = int(input("Введите число : "))
+            c = math.factorial(a)
+            print("Факториал из ", a, " = ", c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "8" :
-        a = int(input("Введите число : "))
-        b = math.radians(a)
-        c = math.sin(b)
-        print("Синус из ", a, " градусов = ", c)
+        try:
+            a = int(input("Введите число : "))
+            b = math.radians(a)
+            c = math.sin(b)
+            print("Синус из ", a, " градусов = ", c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "9" :
-        a = int(input("Введите число : "))
-        b = math.radians(a)
-        c = math.cos(b)
-        print("Косинус из", a, " градусов = ", c)
+        try:
+            a = int(input("Введите число : "))
+            b = math.radians(a)
+            c = math.cos(b)
+            print("Косинус из", a, " градусов = ", c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "10" :
-        a = int(input("Введите число : "))
-        b = math.radians(a)
-        c = math.tan(b)
-        print("Тангенс из", a, " градусов = ", c)
+        try:
+            a = int(input("Введите число : "))
+            b = math.radians(a)
+            c = math.tan(b)
+            print("Тангенс из", a, " градусов = ", c)
+        except ValueError:
+            print("Неверный ввод. Введите число.")
     elif choice == "11":
          print("Суицид...")
          break
     else:
-         print("Неверный выбор. Попробуйте снова.")
+         print("Неверный ввод. Введите число.")
